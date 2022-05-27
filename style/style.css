@@ -193,7 +193,7 @@ button{
     width: 180px;
     height: 320px;
     border-radius: 10px;
-    background-image: url("./img/perfil_trjeta.jpg");
+    background-image: url("../img/perfil_trjeta.jpg");
     background-position: center;
     background-size: cover;
     margin-bottom: 12px;
@@ -206,7 +206,7 @@ button{
     width: 180px;
     height: 350px;
     border-radius: 10px;
-    background-image: url("./img/img3.jpg");
+    background-image: url("../img/img3.jpg");
     background-position: center;
     background-size: cover;
     margin-bottom: 12px;
@@ -216,7 +216,7 @@ button{
     width: 180px;
     height: 350px;
     border-radius: 10px;
-    background-image: url("./img/img1.jpg");
+    background-image: url("../img/img1.jpg");
     background-position: center;
     background-size: cover;
     margin-bottom: 12px;
@@ -225,7 +225,7 @@ button{
     width: 180px;
     height: 350px;
     border-radius: 10px;
-    background-image: url("./img/img2.jpg");
+    background-image: url("../img/img2.jpg");
     background-position: center;
     background-size: cover;
     margin-bottom: 12px;
@@ -235,7 +235,7 @@ button{
     width: 180px;
     height: 350px;
     border-radius: 10px;
-    background-image: url("./img/img2.png");
+    background-image: url("../img/img2.png");
     background-position: center;
     background-size: cover;
     margin-bottom: 12px;
