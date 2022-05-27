@@ -1,21 +1,534 @@
-.imagen{
+/* .imagen{
     background-image: url("../img/imuno.jpg");
     background-size: cover;
     width: 200px;
     height: 200px;
+} */
+:root{
+    --color-primario: #F3F7FF;
+}
+
+/* root 
+--
+font-family: 'Koulen', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+
+*/
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body{
- background-color: black;
+    width: 100vw;
+    height: auto;
+    background-color: var(--color-primario);
 }
 
+header{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.logo span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    padding-top: 5px;
+    margin-left: 10px;
+}
+
+.icon_menu{
+    padding-top: 8px;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.menu_desplegable{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 258px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #090A38;
+    z-index: 1;
+    right: 0;
+}
+
+.logo_dos{
+    
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 600;
+        
+}
+
+.bxs-exit{
+    color:  var(--color-primario);
+}
+.menu_desplegable > ul {
+    list-style-type: none;
+}
+
+.menu_desplegable > ul >li {
+    text-decoration: none;
+    margin-bottom: 3px;
+    font-size: 20px;
+}
+
+.menu_desplegable > ul >li >a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-primario);
+
+}
+
+
+
+
+.nav_media{
+    visibility: hidden;
+    margin-right: 20px;
+    display: none;
+}
+ul{
+    list-style-type: none;
+}
+.nav_media ul li{
+    font-size: 30%;
+}
+
+.nav_media ul li a{
+    text-decoration: none;
+    color: #090A38;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.icon_menu{
+    font-size: 25px;
+}
 
 .carousel-inner{
-    max-width: 300px;
-    min-height: 300px;
+    max-height: 300px;
+    min-height: 200px;
 }
 
-.carousel-inner > img{
-    width: 300px;
-    height: 300px;
+.carrusel{
+    position: static;
 }
+.carousel-inner img{
+    max-height: 350px;    
+}
+
+.descripcion{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.introduccion{
+    display: flex;
+    width: 100%;
+    max-width: 80%;
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.introduccion p{
+    font-family: 'Roboto', sans-serif;
+    /* display: inline-block; */
+    font-size: 20px;
+    line-height: 33px;
+}
+
+button{
+    width: auto;
+    height: auto;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 20px;
+    background-color:#090A38;
+    color:#F3F7FF;
+}
+
+.btn_link{
+    text-decoration: none;
+    color:#F3F7FF;
+
+}
+   
+
+.tarjetas_fotografos{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+.img_uno{
+    width: 180px;
+    height: 320px;
+    border-radius: 10px;
+    background-image: url("./img/perfil_trjeta.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 12px;
+    align-items: center;
+}
+
+
+
+.img_dos{
+    width: 180px;
+    height: 350px;
+    border-radius: 10px;
+    background-image: url("./img/img3.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 12px;
+}
+
+.img_tres{
+    width: 180px;
+    height: 350px;
+    border-radius: 10px;
+    background-image: url("./img/img1.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 12px;
+}
+.img_cuat{
+    width: 180px;
+    height: 350px;
+    border-radius: 10px;
+    background-image: url("./img/img2.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 12px;
+}
+
+.img_cinc{
+    width: 180px;
+    height: 350px;
+    border-radius: 10px;
+    background-image: url("./img/img2.png");
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 12px;
+}
+
+
+.desc_recomendados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 12px;
+
+}
+
+.texto_r{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #090A38;
+    font-weight: 600;
+}
+
+.img_recomendados{
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction:row;
+    overflow: hidden;    
+}
+
+.img_recomendados div{
+    margin-right:  15px;
+    min-width: 95px;
+    min-height: 95px;
+    border-radius: 50%; 
+    background-image: url("/imagenes/img1.jpg");
+    background-position: center;
+    background-size: cover;
+    border: 1px solid black;
+}
+
+/* lista de recomendados */
+
+.recomendados_lista{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.texto_lista {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #090A38;
+    font-weight: 600;
+}
+
+.imglist_recomendados{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+.imglist_recomendados > .caja{
+    background-color: #090A38;
+    min-width: 200px;
+    min-height: 300px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #F3F7FF;
+}
+
+.caja > .l{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    background-image: url(/imagenes/caja_uno.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.desc_cajas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+
+}
+
+.img_caja_perfil{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(/imagenes/perfil_trjeta.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+
+/* el error esta en los divs */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 447px) {
+    
+    .introduccion p{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+
+    button{
+        font-size: 30px;
+    }
+
+
+    .descripcion{
+
+        overflow: hidden; 
+        width: 100%;
+    }
+
+    .tarjetas_fotografos{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      margin-top: 25px; 
+      overflow: hidden;
+      width: 100%;
+    }
+    .img_uno{
+        width: 350px;
+        height: 350px;
+    }
+    .img_dos{
+        width: 350px;
+        height: 350px;
+        margin-left: 50px;
+    }
+    .img_tres{
+        width: 350px;
+        height: 350px;
+        margin-left: 50px; 
+    }
+    .img_cuat{
+        width: 350px;
+        height: 350px;
+        margin-left: 50px;
+    }
+
+    .img_cinc{
+        width: 350px;
+        height: 350px;
+        margin-left: 50px;
+    }
+    .icon_menu{
+        display: none;
+    }
+    
+    .nav_media{
+        visibility: visible;
+        margin-top: 10px;
+        margin-right: 13px;
+        display: inline-block;
+       
+    }
+
+    .nav_media ul li{
+        display: inline-block;
+        font-size: 20px;
+    }
+
+
+  
+
+}   
+
+
+
+
+
+
+
+/* .tarjeta {
+    width: 105px;
+    height: 180px;
+    background-color: var(--color-secundario);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:  center;
+}
+
+.img_tarjeta{
+    width: 105px;
+    height: 110px;
+    background-image: url(/imagenes/POrtada\ tarjeta.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.descrip_tarjetas{
+    display: flex;
+    padding: 10px;
+    margin-top: 10px;
+    justify-content: center;
+    
+}
+
+.img_perfil_tarjeta{
+    width: 40px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url(/imagenes/perfil_trjeta.jpg);
+    background-position:center;
+    background-size: cover;
+    padding-top: 5px;
+}
+
+.titulo_fotografo_tarjeta{
+    font-size: 10px;
+    font-family: var(--font--textos);
+    color: var(--color-primario);
+
+} */
+
+
+
+
+
+/* 
+.fondo_tarjeta{
+    width: 150px;
+    height: 220px;
+    background-color: var(--color-secundario);
+
+}
+
+.fondo_tarjeta {
+    width: 80px;
+    height: 120px;
+    background-image: url(/imagenes/foto_perfil.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+
+
+
+

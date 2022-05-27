@@ -8,30 +8,78 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   </head>
   <body>
-    <section class="carrusel">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./img/foto-pettine-IfjHaIoAoqE-unsplash (2).jpg" class="d-block w-100" alt="imagen">
-            </div>
-            <div class="carousel-item">
-              <img src="./img/imdos.jpg" class="d-block w-100" alt="imagendos">
-            </div>
-            <div class="carousel-item">
-              <img src="./img/imtres.jpg" class="d-block w-100" alt="imagentres">
-            </div>
+    <header>
+        <div class="logo">
+            <span>U-event</span>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+              <div class="menu_hamburguesa">
+                  <box-icon class="icon_menu" onclick="ocultar()" name='menu'></box-icon>
+              </div>
+              <div class="menu_desplegable">
+                <ul>
+                  <li><a href=""><div class="logo_dos">
+                    <i class='bx bxs-home bx-sm bx-tada'></i>
+                    <span>Menu</span>
+                  </div></a></li>
+                  <li><a href=""><div class="logo_dos">
+                    <i class='bx bx-camera'></i>
+                    <span>Fotografos</span>
+                  </div></a></li>
+                  <li><a href=""><div class="logo_dos">
+                    <i class='bx bxs-info-square bx-sm bx-tada'></i>
+                    <span>Nosotros</span>
+                  </div></a></li>   
+                </ul>
+                <div class="btn_cerrar" onclick="botoncerrar()">
+                  <i class='bx bxs-exit bx-sm'></i>
+                </div>
+              </div>
+        <nav class="nav_media">
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Fotografos</a></li>
+                <li><a href="">U-event</a></li>
+            </ul>
+        </nav>
+  </header>
+  <section class="carrusel">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/imdos.jpg" class="d-block w-100" alt="imagen">
         </div>
-      </section>
-      <p>hola</p> 
+        <div class="carousel-item">
+          <img src="./img/imuno.jpg" class="d-block w-100" alt="imagendos">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/imtres.jpg" class="d-block w-100" alt="imagentres">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="descripcion  animate__animated animate__fadeInUp animate__delay-1s">
+    <div class="introduccion">
+      <p class="parrafo">Traemos para ti los mejores <span>fotografos</span>  para tu evento de <span></span>Ciudad Juarez</span>, en un solo lugar.</p>
+      <button  type="button" class="btn_fotografos"><a class="btn_link" href="/fotografos.html">Fotografos</a> </button>
+    </div> 
+
+    <section class="tarjetas_fotografos animate__animated animate__slideInLeft animate__delay-2s ">
+      <div class="img_uno"></div>
+      <div class="img_dos"></div>
+      <div class="img_tres"></div>
+      <div class="img_cuat"></div>
+      <div class="img_cinc"></div>
+    </section> 
+
         
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
@@ -45,7 +93,7 @@
     <div class="imagen"></div>
         <img src="img/thedevsflyer.png" alt=""> -->
 
-
+        <!-- ./img/imdos.jpg -->
 <!--
    
 
