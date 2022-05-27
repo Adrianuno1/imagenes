@@ -1,0 +1,10 @@
+.imagen{
+    background-image: url(../img/thedevsflyer.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+}
+
+body{
+ background-color: black;
+}
