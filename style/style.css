@@ -8,3 +8,16 @@
 body{
  background-color: black;
 }
+
+.carousel-inner{
+    max-height: 300px;
+    min-height: 200px;
+}
+
+.carrusel{
+    position: static;
+}
+.carousel-inner img{
+    max-height: 350px;    
+}
+
